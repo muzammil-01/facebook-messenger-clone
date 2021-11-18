@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  margin: 20px auto;
+  width: 70%;
+  background: lightgray;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* --------------Style for header ------------------------- */
+.header {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
+  border-radius: 10px 10px 0px 0px;
+  background: white;
+  width: 50%;
+  margin: 0 auto;
+}
+.users p {
+  display: inline;
+}
+.header ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.header li:first-child {
+  margin-right: auto;
+}
+.header ul li {
+  list-style: none;
+}
+.fa-user {
+  background: white;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 10px;
+}
+.fa-video,
+.fa-phone-alt,
+.fa-cog,
+.fa-times {
+  padding: 13px;
+  margin-right: 10px;
+  color: #0084ff;
+}
+.headericons:hover{
+  transform: translateY(-10%);
+}
+.circle {
+  display: inline-block;
+  margin-left: -20px;
+  margin-top: 18px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #65b343;
+}
+.circle1 {
+  display: inline-block;
+  margin-left: -15px;
+  margin-top: 18px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #65b343;
+  border: 1px solid white;
+}
+.name {
+  display: inline-block;
+}
+.activeNow {
+  color: #848588;
+  font-size: 15px;
+}
+
+.setting {
+  position: relative;
+}
+.drop {
+  padding: 12px;
+  width: 250px;
+  position: absolute;
+  background: white;
+  color: black;
+  top: 35px;
+  left: -50px;
+  border: 1px solid grey;
+  display: none;
+}
+hr {
+  width: 100%;
+}
+.setting:hover .drop {
+  display: block;
+}
+.drop i {
+  margin-right: 10px;
+}
+.drop p {
+  padding: 8px;
+}
+.drop p:hover {
+  background: lightgray;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.blue {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: blue;
+}
+
+/* ---------------- style for message area ---------------- */
+
+.messages {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
+  background-attachment: scroll;
+  overflow: auto;
+  height: 400px;
+  background: white;
+  width: 50%;
+  margin: 0 auto;
+}
+.m1 p {
+  display: inline-block;
+  background: #e4e6eb;
+  border-radius: 20px;
+  padding: 10px;
+}
+.m11 p {
+  display: inline-block;
+  background: #e4e6eb;
+  border-radius: 20px;
+  padding: 10px;
+}
+.m11 {
+  float: left;
+  clear: both;
+}
+.m2,
+.m3 {
+  float: right;
+  padding: 10px;
+  border: 1px solid;
+  clear: both;
+  background: #0084ff;
+  color: white;
+}
+.m2 {
+  border-radius: 25px 25px 0px 25px;
+}
+.m3 {
+  border-radius: 25px 0px 25px 25px;
+}
+.m4 {
+  float: right;
+  clear: both;
+}
+.m5 {
+  clear: both;
+}
+.share{
+    display: inline;
+    position: relative;
+    top: -60px;
+}
+.share i{
+    font-size: 25px;
+    color: #848588;
+}
+.m6 {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #2f86f7;
+  float: right;
+}
+.m6 p {
+  margin-left: 17px;
+  line-height: 2.7;
+  color: white;
+}
+.msgPic {
+  border-radius: 10px;
+  width: 50%;
+}
+.pic2 {
+  float: right;
+  clear: both;
+  border-radius: 20px;
+  width: 50%;
+  margin: 10px;
+}
+.seen {
+  float: right;
+  clear: both;
+  color: #848588;
+  font-size: 12px;
+  margin-top: 7px;
+  margin-right: 3px;
+}
+.userIcon {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+/* ------------------ Message input box styling ----------- */
+
+.inpt {
+  width: 50%;
+  margin: 0 auto;
+}
+#msgText {
+  padding: 15px 0px 0px 15px;
+  width: 100%;
+  outline: none;
+  border: none;
+  resize: none;
+}
+#msgText::placeholder {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 15px;
+}
+
+/* ------------- Icons after textarea ----------------- */
+
+.icons {
+  margin: -4px auto;
+  width: 50%;
+  background: white;
+  border-radius: 0px 0px 10px 10px;
+  padding: 10px;
+}
+
+.icons ul{
+    display: flex;
+    flex-wrap: wrap;
+  }
+ .icons ul li{
+     list-style: none;
+     font-size: 20px;
+ }
+ .icons ul li i{
+     color: #0084ff;
+ }
+ .icons ul li:last-child{
+     margin-left: auto;
+ }
+ .icons ul li{
+     justify-content: space-between;
+ }
+ .pad-left{
+     padding-left: 30px;
+ }
+ .icons ul li:hover{
+  transform: translateY(-10%);
+}
